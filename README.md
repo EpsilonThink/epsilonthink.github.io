@@ -9,6 +9,7 @@ Simple static academic website for GitHub Pages.
 - `teaching.html` — teaching
 - `cv.html` — CV
 - `contact.html` — contact
+- `join.html` — opportunities / join the group
 - `style.css` — shared styling
 
 To add a downloadable CV, place `cv.pdf` in the repository root.
