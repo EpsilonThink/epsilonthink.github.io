@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People | Thingstad Group</title>
+  <meta name="description" content="People in the Thingstad Group at KFUPM.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a class="site-name" href="index.html">Thingstad Group</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="people.html" class="active">People</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
+      <a href="join.html">Join us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="sitewide-band">
+  <img src="banner-sitewide.png" alt="Abstract scientific banner">
+</div>
+
+
+<main>
+  <div class="container">
+    <section class="page-header">
+      <h1>People</h1>
+      <!--<p class="lead">
+        The Thingstad Group is being established within the Quantum Center and the Physics Department at King Fahd University of Petroleum and Minerals.
+      </p>
+-->
+    </section>
+
+    <section class="person-card">
+      <img class="person-photo" src="profile1.jpg" alt="Even Thingstad">
+      <div>
+        <h2>Even Thingstad</h2>
+        <p class="person-title">Assistant Professor, Department of Physics</p>
+
+        <p class="person-details">
+	Assistant Professor, Department of Physics<br>
+          Interdisciplinary Research Center for Advanced Quantum Computing<br>
+          King Fahd University of Petroleum and Minerals<br>
+          Office: 6-142<br>
+          E-mail: <span class="protected-email">Enable JavaScript to display email</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="group-note">
+      <h2>We are growing</h2>
+      <p>
+        We are currently establishing a new theory group focused on quantum condensed
+        matter physics. Postdoctoral positions are available through the KFUPM Quantum
+        Center. PhD and graduate student positions are available through KFUPM for distinguished candidates.
+      </p>
+      <p>
+        <strong>Prospective postdocs:</strong>
+        <a class="inline-link" href="https://academicjobsonline.org/ajo/jobs/31641"
+           target="_blank" rel="noopener noreferrer">Apply here.</a><br>
+        <strong> Prospective graduate and PhD students:</strong>
+        Send me your CV and research interests. </a><br>
+        <strong> Prospective undergraduate researchers:</strong> Write to me, or come by my office (6-142). 
+      </p>
+    </section>
+
+    <script>
+      (function () {
+        var user = "even" + "." + "thingstad";
+        var domain = "kfupm" + ".edu.sa";
+        var address = user + "@" + domain;
+        document.querySelectorAll(".protected-email").forEach(function (target) {
+          var link = document.createElement("a");
+          link.href = "mailto:" + address;
+          link.textContent = address;
+          target.textContent = "";
+          target.appendChild(link);
+        });
+      })();
+    </script>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 Even Thingstad
+  </div>
+</footer>
+</body>
+</html>

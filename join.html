@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join us | Even Thingstad</title>
-  <meta name="description" content="Postdoctoral and PhD opportunities with Even Thingstad's research group.">
+  <title>Join us | Thingstad Group</title>
+  <meta name="description" content="Postdoctoral, PhD, graduate, and undergraduate research opportunities in the Thingstad Group at KFUPM.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
   <div class="container navbar">
-    <a class="site-name" href="index.html">Even Thingstad</a>
+    <a class="site-name" href="index.html">Thingstad Group</a>
     <nav>
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
+      <a href="people.html">People</a>
       <a href="teaching.html">Teaching</a>
       <a href="cv.html">CV</a>
       <a href="join.html" class="active">Join us</a>
@@ -22,33 +23,91 @@
   </div>
 </header>
 
+<div class="sitewide-band">
+  <img src="banner-sitewide.png" alt="Abstract scientific banner">
+</div>
+
+
 <main>
   <div class="container">
-    <h1>Join us</h1>
+    <section class="page-header">
+      <h1>Join us</h1>
+      <p class="lead">
+        We are building a theory group at KFUPM and welcome researchers and students
+        interested in quantum condensed matter physics.
+      </p>
+    </section>
 
-    <p class="lead">
-      I am always interested in hearing from motivated researchers and students
-      who would like to work on problems in theoretical condensed matter physics,
-      superconductivity, quantum magnetism, and topological quantum matter.
-    </p>
+<h2>We are growing</h2>
+      <p>
+        We are currently establishing a new theory group focused on quantum condensed
+        matter physics. Postdoctoral positions are available through the KFUPM Quantum
+        Center. PhD and graduate student positions are available through KFUPM for distinguished candidates.
+      </p>
+	<p>In short:</p>
+      <p>
+        <strong>Prospective postdocs:</strong>
+        <a class="inline-link" href="https://academicjobsonline.org/ajo/jobs/31641"
+           target="_blank" rel="noopener noreferrer">Apply here.</a><br>
+        <strong> Prospective graduate and PhD students:</strong>
+        Send me your CV and research interests </a><br>
+        <strong> Prospective undergraduate researchers:</strong> Write to me, or come by my office (6-142). 
+      </p>
+	<p>
+        Please find more information below.
+      </p>
+    <section class="info-block">
+      <h2>Postdoctoral positions</h2>
+      <p>
+        Postdoctoral positions are currently available through the KFUPM Quantum Center.
+        The positions offer substantial scientific independence together with close
+        collaboration across the Center. Relevant directions include quantum condensed
+        matter theory, topology, magnetism and spintronics, quantum many-body physics,
+        and related areas.
+      </p>
+      <p>
+        Appointments are initially for 24 months, with the possibility of extension,
+        and the start date is flexible.
+      </p>
+      <p>
+        <a class="inline-link"
+           href="https://academicjobsonline.org/ajo/jobs/31641"
+           target="_blank"
+           rel="noopener noreferrer">Learn more and apply here!</a>
+      </p>
+    </section>
 
-    <h2>Postdoctoral positions</h2>
-    <p>
-      A postdoctoral position is currently advertised. Details and application
-      information are available through Academic Jobs Online:
-    </p>
-    <p>
-      <a href="https://academicjobsonline.org/ajo/jobs/31641" target="_blank" rel="noopener noreferrer">
-        View the postdoctoral position
-      </a>
-    </p>
+    <section class="info-block">
+      <h2>Graduate and PhD student positions </h2>
+      <p>
+        Graduate and PhD student positions are available at KFUPM for distinguished applicants.
+        If you are interested in joining the group as a PhD student, write me an e-mail
+        to learn more. Please attach your CV and a few sentences about your research interests. 
+      </p>
+      </section>
 
-    <h2>PhD positions</h2>
-    <p>
-      Prospective PhD students are also welcome to get in touch. If you are
-      interested in joining the group, feel free to contact me with a short
-      description of your background and research interests.
-    </p>
+<section class="info-block">
+      <h2>Undergraduate and graduate research</h2>
+      <p>
+        Graduate and undergraduate students who are interested in research projects
+        are also very welcome to get in touch. Send me an e-mail, or simply come by my office (6-142) to talk.
+      </p>
+    </section>
+
+    <script>
+      (function () {
+        var user = "even" + "." + "thingstad";
+        var domain = "kfupm" + ".edu.sa";
+        var address = user + "@" + domain;
+        document.querySelectorAll(".protected-email").forEach(function (target) {
+          var link = document.createElement("a");
+          link.href = "mailto:" + address;
+          link.textContent = address;
+          target.textContent = "";
+          target.appendChild(link);
+        });
+      })();
+    </script>
   </div>
 </main>
 

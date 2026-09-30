@@ -3,48 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Even Thingstad</title>
-  <meta name="description" content="Academic homepage of Even Thingstad, theoretical condensed matter physicist.">
+  <title>Contact | Thingstad Group</title>
+  <meta name="description" content="Contact information for the Thingstad Group at KFUPM.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
   <div class="container navbar">
-    <a class="site-name" href="index.html">Even Thingstad</a>
+    <a class="site-name" href="index.html">Thingstad Group</a>
     <nav>
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
+      <a href="people.html">People</a>
       <a href="teaching.html">Teaching</a>
       <a href="cv.html">CV</a>
+      <a href="join.html">Join us</a>
       <a href="contact.html" class="active">Contact</a>
     </nav>
   </div>
 </header>
 
+<div class="sitewide-band">
+  <img src="banner-sitewide.png" alt="Abstract scientific banner">
+</div>
+
+
 <main>
   <div class="container">
+    <section class="page-header">
+      <h1>Contact</h1>
+      <!--<p class="lead"> Contact information for the Thingstad Group. </p> -->
+    </section>
 
-    <h1>Contact</h1>
+    <section class="info-block">
+      <p>
+        <strong>Even Thingstad</strong><br>
+        Assistant Professor, Department of Physics<br>
+        Interdisciplinary Research Center for Advanced Quantum Computing<br>
+        King Fahd University of Petroleum and Minerals<br>
+        Office: 6-142<br>
+        E-mail: <span class="protected-email">Enable JavaScript to display email</span>
+      </p>
+    </section>
+<!--
+    <section class="info-block">
+      <h2>Profiles</h2>
+      <ul class="section-list">
+        <li><a href="#">Google Scholar</a></li>
+        <li><a href="#">ORCID</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+    </section>
+-->
 
-    <p>
-      <strong>Even Thingstad</strong><br>
-      Assistant Professor<br>
-      Physics Department<br>
-      King Fahd University of Petroleum and Minerals
-    </p>
-
-    <h2>Email</h2>
-    <p>
-      Add your preferred university email address here.
-    </p>
-
-    <h2>Profiles</h2>
-    <ul class="section-list">
-      <li><a href="#">Google Scholar</a></li>
-      <li><a href="#">ORCID</a></li>
-      <li><a href="#">GitHub</a></li>
-    </ul>
-
+    <script>
+      (function () {
+        var user = "even" + "." + "thingstad";
+        var domain = "kfupm" + ".edu.sa";
+        var address = user + "@" + domain;
+        document.querySelectorAll(".protected-email").forEach(function (target) {
+          var link = document.createElement("a");
+          link.href = "mailto:" + address;
+          link.textContent = address;
+          target.textContent = "";
+          target.appendChild(link);
+        });
+      })();
+    </script>
   </div>
 </main>
 

@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV | Even Thingstad</title>
-  <meta name="description" content="Academic homepage of Even Thingstad, theoretical condensed matter physicist.">
+  <meta name="description" content="Brief academic CV of Even Thingstad, Assistant Professor in the Department of Physics at KFUPM.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
   <div class="container navbar">
-    <a class="site-name" href="index.html">Even Thingstad</a>
+    <a class="site-name" href="index.html">Thingstad Group</a>
     <nav>
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
+      <a href="people.html">People</a>
       <a href="teaching.html">Teaching</a>
       <a href="cv.html" class="active">CV</a>
       <a href="join.html">Join us</a>
@@ -22,37 +23,97 @@
   </div>
 </header>
 
+<div class="sitewide-band">
+  <img src="banner-sitewide.png" alt="Abstract scientific banner">
+</div>
+
+
 <main>
   <div class="container">
+    <section class="page-header">
+      <h1>CV</h1>
+      <div class="cv-identity">
+        <strong>Even Thingstad</strong><br>
+	Assistant Professor, Department of Physics<br>
+        Interdisciplinary Research Center for Advanced Quantum Computing<br>
+        King Fahd University of Petroleum and Minerals<br>
+        E-mail: <span class="protected-email">Enable JavaScript to display email</span><br>
+        Office: 6-142
+      </div>
+    </section>
 
-    <h1>CV</h1>
-    <p class="lead">
-      A short academic overview. You can also place a PDF version of your full CV in this repository.
-    </p>
+    <section class="info-block">
+      <h2>Background</h2>
+      <p>
+        Nationality: Norwegian
+      </p>
+      <p>
+        I am a theoretical condensed matter physicist working on superconductivity,
+        quantum magnetism and spin transport, topological quantum matter, quantum
+        many-body phenomena, and low-dimensional systems.
+      </p>
+      <p>
+        <a class="inline-link" href="https://scholar.google.com/citations?hl=en&user=HQakPwkAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        &nbsp;·&nbsp;
+        <a class="inline-link" href="https://orcid.org/0000-0002-7862-2286" target="_blank" rel="noopener noreferrer">ORCID</a>
+      </p>
+    </section>
 
-    <h2>Current position</h2>
-    <p>
-      <strong>Assistant Professor</strong><br>
-      Physics Department, King Fahd University of Petroleum and Minerals
-    </p>
+    <section class="info-block">
+      <h2>Employment and education</h2>
+      <p>
+        <strong>2026–present</strong> · Assistant Professor, Department of Physics,
+        King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia.
+        Associated with the Quantum Center.
+      </p>
+      <p>
+        <strong>2021–2026</strong> · Postdoctoral Researcher, University of Basel,
+        Basel, Switzerland. <br> Working with Prof. Daniel Loss and Prof. Jelena Klinovaja.
+      </p>
+      <p>
+        <strong>2017–2021</strong> · PhD in Physics, Norwegian University of Science and Technology (NTNU), Trondheim, Norway.<br>
+        Thesis: <em>Collective effects in low-dimensional systems with coupled quasiparticles</em>.<br>
+        Advisor: Prof. Asle Sudbø.
+      </p>
+      <p>
+        <strong>2015–2017</strong> · MSc in Physics, NTNU, Trondheim, Norway.<br>
+        One-year exchange at the Technical University of Munich (TUM), Munich, Germany.<br>
+        Thesis: <em>Spin-Orbit Coupled Ultracold Atoms in the Weak and Strong Coupling Regimes</em>.<br>
+        Advisor: Prof. Asle Sudbø.<br>
+        Student of the Year in Natural Sciences upon graduation from the Faculty of Natural Sciences.
+      </p>
+      <p>
+        <strong>2012–2015</strong> · BSc in Physics, NTNU, Trondheim, Norway.
+      </p>
+    </section>
 
-    <h2>Previous positions</h2>
-    <p>
-      Postdoctoral research in theoretical condensed matter physics at the University of Basel.
-    </p>
+<!--
+<section class="info-block">
+  <h2>Research interests</h2>
+  <p>
+    Theoretical condensed matter physics, with emphasis on superconductivity,
+    magnetism and spin transport, topological quantum matter, quantum many-body
+    phenomena, and low-dimensional systems. A recurring theme is how interactions,
+    interfaces, and engineered environments can be used to create or control
+    collective quantum phases.
+  </p>
+</section>
+-->
 
-    <h2>Education</h2>
-    <p>
-      Add undergraduate, graduate, and doctoral education here.
-    </p>
-
-    <h2>Download</h2>
-    <p>
-      <a href="cv.pdf">Download full CV (PDF)</a>
-    </p>
-
-    <p><em>Place a file named <code>cv.pdf</code> in the same repository to activate the link above.</em></p>
-
+    <script>
+      (function () {
+        var user = "even" + "." + "thingstad";
+        var domain = "kfupm" + ".edu.sa";
+        var address = user + "@" + domain;
+        document.querySelectorAll(".protected-email").forEach(function (target) {
+          var link = document.createElement("a");
+          link.href = "mailto:" + address;
+          link.textContent = address;
+          target.textContent = "";
+          target.appendChild(link);
+        });
+      })();
+    </script>
   </div>
 </main>
 
